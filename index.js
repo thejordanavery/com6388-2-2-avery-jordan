@@ -1,17 +1,17 @@
-function greet() {
-    var username = prompt ("What is your name?") 
-        alert (Hello,' + name);
+function greet(name,age,birthday) {
+
+    var name = prompt ("What is your name?") 
+        alert ("Hello," + name);
 
     var age = prompt ("How old are you?")
     console.log(parseInt(age)); 
 
+    var dob = confirm ("Did you celebrate your birthday already this year? yes/no")
 
-    var age = prompt ("How old are you?")
-    var dob = confirm ("Did you celebrate your birthday already? yes/no")
-    if (dob) {
-        alert ('result is ' + new Date().getFullYear() - age")
+    if (dob = true) {
+        alert ("result is" + (new Date().getFullYear() - age))
     } else {
-        alert ('result is ' + new Date().getFullYear() - age - 1)
+        alert ("result is" + (new Date().getFullYear() - age - 1))
     }
 }
 
